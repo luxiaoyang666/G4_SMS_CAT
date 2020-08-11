@@ -111,16 +111,22 @@ int check_sim_ready(ComportAttr *comport)
 /* Check the SIM card registration," 0,1 " , " 0,5 "  means available */
 int check_sim_registe(ComportAttr *comport)
 {
-    int    retval1;
-    int    retval2;
+    int    retval;
+    char   temp_buf[64] = {0};
 
-    retval1 = send_at_cmd(comport,"AT+CREG?\r","0,1",NULL,0,2);
-    retval2 = send_at_cmd(comport,"AT+CREG?\r","0,5",NULL,0,2);
 
-    if(retval1 && retval2)
+    retval = send_at_cmd(comport,"AT+CREG?\r","OK",temp_buf,sizeof(temp_buf),2);
+
+    if(retval < 0)
     {
         printf("SIM is not registered\n");
         return -1;
+    }
+
+    if(!strstr(temp_buf,"0,1") || !strstr(temp_buf,"0,5"))
+    {
+        printf("SIM is not registered\n");
+        return -2;
     }
 
     return 0;
