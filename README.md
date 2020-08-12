@@ -1,6 +1,6 @@
 # 项目: Linux 4G短信猫
 ## 项目流程图
-![image](https://github.com/xxx/xx.png)
+![image](https://github.com/luxiaoyang666/G4_SMS_CAT/blob/master/pro_pic/%E9%A1%B9%E7%9B%AE%E6%B5%81%E7%A8%8B%E5%9B%BE.png)
 
 
 
