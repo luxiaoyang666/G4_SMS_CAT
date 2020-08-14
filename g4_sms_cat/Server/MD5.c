@@ -13,7 +13,23 @@
 #include "MD5.h"
 
 
-/* MD5加密 */
+/*********************************************************************************
+ *
+ * Function:   void md5_encryption(const char *unencrypted_buf,int unencrypted_buf_len,char *encrypted_buf,int encrypted_buf_size)
+ *  
+ *   Parameter:   const char *unencrypted_buf     -     Encrypted data  
+ *
+ *                int unencrypted_buf_len         -     The length of unencrypted_buf 
+ *
+ *                char *encrypted_buf             -     Used to store encrypted ciphertext
+ *
+ *                int encrypted_buf_size          -     The length of encrypted_buf
+ *
+ * Description:   Use the incoming plaintext to encrypt and save to encrypted_buf
+ *
+ *      Return:   void
+ *
+ *********************************************************************************/
 void md5_encryption(const char *unencrypted_buf,int unencrypted_buf_len,char *encrypted_buf,int encrypted_buf_size)
 {
 
