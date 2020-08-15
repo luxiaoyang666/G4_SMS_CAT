@@ -35,3 +35,29 @@ socket客户端与服务器之间的通信采用JSON格式，登录验证时，�
 ![image](https://github.com/luxiaoyang666/G4_SMS_CAT/blob/master/pro_pic/%E6%A8%A1%E5%9D%97%E6%8E%A5%E6%94%B61.png)
 
 ![image](https://github.com/luxiaoyang666/G4_SMS_CAT/blob/master/pro_pic/%E6%A8%A1%E5%9D%97%E6%8E%A5%E6%94%B62.png)
+
+-
+-
+-
+-
+### PPP拨号线程
+
+#### 未运行PPP拨号脚本，只有默认网卡
+![image](https://github.com/luxiaoyang666/G4_SMS_CAT/blob/master/pro_pic/%E7%A8%8B%E5%BA%8F%E8%BF%90%E8%A1%8C%E5%89%8D%E6%9C%AA%E4%BD%BF%E7%94%A8ppp%E6%8B%A8%E5%8F%B7.png)
+
+#### PPP拨号后，出现ppp0网卡
+![image](https://github.com/luxiaoyang666/G4_SMS_CAT/blob/master/pro_pic/ppp%E6%8B%A8%E5%8F%B7%E5%90%8E%E6%9C%89ppp0%E7%BD%91%E5%8D%A1.png)
+
+#### ping命令测试ppp0网卡，通过丢包率判断网卡可用性
+![image](https://github.com/luxiaoyang666/G4_SMS_CAT/blob/master/pro_pic/ppp%E6%8B%A8%E5%8F%B7%E4%B8%A2%E5%8C%85.png)
+
+#### 网卡可用
+![image](https://github.com/luxiaoyang666/G4_SMS_CAT/blob/master/pro_pic/ppp0%E5%8F%AF%E7%94%A8.png)
+
+#### PPP拨号脚本截图
+![image](https://github.com/luxiaoyang666/G4_SMS_CAT/blob/master/pro_pic/ppp%E6%8B%A8%E5%8F%B7%E8%BF%90%E8%A1%8C%E8%84%9A%E6%9C%AC.png)
+
+
+
+
+
